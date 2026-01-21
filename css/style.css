@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  direction: rtl; /* اللغة عربية */
+  background-color: #121212; /* لون داكن للخلفية */
+  color: #ecf0f1; /* لون النصوص الأساسي يكون فاتح عشان يظهر على الداكن */
+}
+
+/* شريط التنقل */
+nav {
+  background-color: #2c3e50; /* لون الخلفية */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* شعار الموقع */
+nav .logo {
+  color: #ecf0f1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* قائمة الروابط */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* عناصر القائمة */
+nav ul li {
+  margin-left: 20px;
+}
+
+/* الروابط */
+nav ul li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+/* تأثير عند المرور على الرابط */
+nav ul li a:hover {
+  color: #3498db;
+}
+header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #ecf0f1;
+        }
+
+        .tests-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .test-item {
+            background-color: #34495e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .test-item:hover {
+            background-color: #3498db;
+            transform: translateY(-5px);
+        }
+
+        .test-item a {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 1.2rem;
+            display: block;
+        }

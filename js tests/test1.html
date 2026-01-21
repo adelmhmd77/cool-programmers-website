@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اختبار JavaScript</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        direction: rtl;
+        background-color: #121212;
+        color: #ecf0f1;
+    }
+    header {
+        background-color: #2c3e50;
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2rem;
+        color: #ecf0f1;
+    }
+    form {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+    .question {
+        background-color: #34495e;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+    }
+    .question p {
+        margin: 0 0 10px;
+        font-weight: bold;
+    }
+    .question label {
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+    .question input[type="radio"] {
+        margin-left: 10px;
+    }
+    .question label:hover {
+        color: #3498db;
+    }
+    .wrong {
+        background-color: #c0392b !important;
+    }
+    button {
+        display: block;
+        margin: 20px auto;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        background-color: #3498db;
+        color: #ecf0f1;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #2980b9;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>اختبار JavaScript - Exam 1</h1>
+</header>
+
+<form id="quizForm">
+
+<!-- Start all 50 questions -->
+
+<div class="question">
+    <p>1. أين يمكن كتابة كود JavaScript داخل صفحة HTML؟</p>
+    <label><input type="radio" name="q1" value="0"> داخل &lt;css&gt;</label>
+    <label><input type="radio" name="q1" value="1"> داخل &lt;script&gt;</label>
+    <label><input type="radio" name="q1" value="0"> داخل &lt;style&gt;</label>
+    <label><input type="radio" name="q1" value="0"> داخل &lt;meta&gt;</label>
+</div>
+
+<div class="question">
+    <p>2. أي مكان هو الأفضل لوضع &lt;script&gt; لتحسين الأداء؟</p>
+    <label><input type="radio" name="q2" value="0"> داخل &lt;head&gt;</label>
+    <label><input type="radio" name="q2" value="1"> قبل إغلاق &lt;/body&gt;</label>
+    <label><input type="radio" name="q2" value="0"> داخل &lt;title&gt;</label>
+    <label><input type="radio" name="q2" value="0"> داخل &lt;link&gt;</label>
+</div>
+
+<div class="question">
+    <p>3. أي امتداد ملف JavaScript الصحيح؟</p>
+    <label><input type="radio" name="q3" value="0"> .html</label>
+    <label><input type="radio" name="q3" value="0"> .css</label>
+    <label><input type="radio" name="q3" value="1"> .js</label>
+    <label><input type="radio" name="q3" value="0"> .java</label>
+</div>
+
+<!-- سنكمل بنفس الشكل لبقية الأسئلة -->
+
+<div class="question">
+    <p>4. كيف تربط ملف JavaScript خارجي؟</p>
+    <label><input type="radio" name="q4" value="1"> &lt;script src="app.js"&gt;&lt;/script&gt;</label>
+    <label><input type="radio" name="q4" value="0"> &lt;link src="app.js"&gt;</label>
+    <label><input type="radio" name="q4" value="0"> &lt;js src="app.js"&gt;</label>
+    <label><input type="radio" name="q4" value="0"> &lt;script href="app.js"&gt;</label>
+</div>
+
+<div class="question">
+    <p>5. هل يمكن كتابة JavaScript داخل ملف HTML؟</p>
+    <label><input type="radio" name="q5" value="1"> نعم</label>
+    <label><input type="radio" name="q5" value="0"> لا</label>
+    <label><input type="radio" name="q5" value="0"> فقط في CSS</label>
+    <label><input type="radio" name="q5" value="0"> فقط في head</label>
+</div>
+
+<div class="question">
+    <p>6. أي وسم يُستخدم لكتابة JavaScript؟</p>
+    <label><input type="radio" name="q6" value="0"> &lt;javascript&gt;</label>
+    <label><input type="radio" name="q6" value="0"> &lt;js&gt;</label>
+    <label><input type="radio" name="q6" value="1"> &lt;script&gt;</label>
+    <label><input type="radio" name="q6" value="0"> &lt;code&gt;</label>
+</div>
+
+<div class="question">
+    <p>7. هل يمكن وجود أكثر من &lt;script&gt; في صفحة واحدة؟</p>
+    <label><input type="radio" name="q7" value="1"> نعم</label>
+    <label><input type="radio" name="q7" value="0"> لا</label>
+    <label><input type="radio" name="q7" value="0"> فقط واحد</label>
+    <label><input type="radio" name="q7" value="0"> فقط في body</label>
+</div>
+
+<div class="question">
+    <p>8. كتابة JavaScript مباشرة داخل HTML تُسمى؟</p>
+    <label><input type="radio" name="q8" value="1"> Inline Script</label>
+    <label><input type="radio" name="q8" value="0"> External Script</label>
+    <label><input type="radio" name="q8" value="0"> Backend Script</label>
+    <label><input type="radio" name="q8" value="0"> Server Script</label>
+</div>
+
+<div class="question">
+    <p>9. أي كود صحيح لطباعة رسالة؟</p>
+    <label><input type="radio" name="q9" value="0"> print("Hello")</label>
+    <label><input type="radio" name="q9" value="1"> console.log("Hello")</label>
+    <label><input type="radio" name="q9" value="0"> echo("Hello")</label>
+    <label><input type="radio" name="q9" value="0"> write("Hello")</label>
+</div>
+
+<div class="question">
+    <p>10. ما وظيفة console.log()؟</p>
+    <label><input type="radio" name="q10" value="0"> عرض رسالة للمستخدم</label>
+    <label><input type="radio" name="q10" value="0"> طباعة في المتصفح</label>
+    <label><input type="radio" name="q10" value="1"> عرض في الـ console</label>
+    <label><input type="radio" name="q10" value="0"> حفظ البيانات</label>
+</div>
+
+<div class="question">
+    <p>11. أين يظهر ناتج console.log؟</p>
+    <label><input type="radio" name="q11" value="0"> الصفحة</label>
+    <label><input type="radio" name="q11" value="0"> قاعدة البيانات</label>
+    <label><input type="radio" name="q11" value="1"> Console</label>
+    <label><input type="radio" name="q11" value="0"> Alert</label>
+</div>
+
+<div class="question">
+    <p>12. أي كود صحيح؟</p>
+    <label><input type="radio" name="q12" value="0"> console.log Hello</label>
+    <label><input type="radio" name="q12" value="1"> console.log("Hello")</label>
+    <label><input type="radio" name="q12" value="0"> console.log = Hello</label>
+    <label><input type="radio" name="q12" value="0"> console.log['Hello']</label>
+</div>
+
+<div class="question">
+    <p>13. JavaScript لغة؟</p>
+    <label><input type="radio" name="q13" value="0"> مترجمة فقط</label>
+    <label><input type="radio" name="q13" value="1"> تُنفذ في المتصفح</label>
+    <label><input type="radio" name="q13" value="0"> خاصة بالسيرفر فقط</label>
+    <label><input type="radio" name="q13" value="0"> لغة تصميم</label>
+</div>
+
+<div class="question">
+    <p>14. أول كود عادة يكون؟</p>
+    <label><input type="radio" name="q14" value="0"> alert</label>
+    <label><input type="radio" name="q14" value="1"> console.log</label>
+    <label><input type="radio" name="q14" value="0"> CSS</label>
+    <label><input type="radio" name="q14" value="0"> HTML</label>
+</div>
+
+<div class="question">
+    <p>15. window يمثل؟</p>
+    <label><input type="radio" name="q15" value="0"> الصفحة فقط</label>
+    <label><input type="radio" name="q15" value="1"> المتصفح بالكامل</label>
+    <label><input type="radio" name="q15" value="0"> الـ HTML</label>
+    <label><input type="radio" name="q15" value="0"> الـ CSS</label>
+</div>
+
+<div class="question">
+    <p>16. document يشير إلى؟</p>
+    <label><input type="radio" name="q16" value="0"> المتصفح</label>
+    <label><input type="radio" name="q16" value="0"> نظام التشغيل</label>
+    <label><input type="radio" name="q16" value="1"> صفحة HTML</label>
+    <label><input type="radio" name="q16" value="0"> Console</label>
+</div>
+
+<div class="question">
+    <p>17. console يُستخدم لـ؟</p>
+    <label><input type="radio" name="q17" value="0"> تصميم الصفحة</label>
+    <label><input type="radio" name="q17" value="0"> تخزين البيانات</label>
+    <label><input type="radio" name="q17" value="1"> عرض الأخطاء</label>
+    <label><input type="radio" name="q17" value="0"> تشغيل السيرفر</label>
+</div>
+
+<div class="question">
+    <p>18. أي كائن هو الأعلى مستوى؟</p>
+    <label><input type="radio" name="q18" value="0"> document</label>
+    <label><input type="radio" name="q18" value="0"> console</label>
+    <label><input type="radio" name="q18" value="1"> window</label>
+    <label><input type="radio" name="q18" value="0"> body</label>
+</div>
+
+<div class="question">
+    <p>19. هل document جزء من window؟</p>
+    <label><input type="radio" name="q19" value="1"> نعم</label>
+    <label><input type="radio" name="q19" value="0"> لا</label>
+    <label><input type="radio" name="q19" value="0"> أحيانًا</label>
+    <label><input type="radio" name="q19" value="0"> لا علاقة</label>
+</div>
+
+<div class="question">
+    <p>20. أي كود صحيح؟</p>
+    <label><input type="radio" name="q20" value="1"> window.alert()</label>
+    <label><input type="radio" name="q20" value="0"> document.alert()</label>
+    <label><input type="radio" name="q20" value="0"> console.alert()</label>
+    <label><input type="radio" name="q20" value="0"> html.alert()</label>
+</div>
+
+<div class="question">
+    <p>21. console.log تابع لأي كائن؟</p>
+    <label><input type="radio" name="q21" value="0"> window</label>
+    <label><input type="radio" name="q21" value="0"> document</label>
+    <label><input type="radio" name="q21" value="1"> console</label>
+    <label><input type="radio" name="q21" value="0"> body</label>
+</div>
+
+<div class="question">
+    <p>22. document.getElementById() يستخدم لـ؟</p>
+    <label><input type="radio" name="q22" value="0"> عرض رسالة</label>
+    <label><input type="radio" name="q22" value="1"> جلب عنصر HTML</label>
+    <label><input type="radio" name="q22" value="0"> طباعة خطأ</label>
+    <label><input type="radio" name="q22" value="0"> إنشاء متغير</label>
+</div>
+
+<div class="question">
+    <p>23. أين تظهر أخطاء JavaScript؟</p>
+    <label><input type="radio" name="q23" value="0"> الصفحة</label>
+    <label><input type="radio" name="q23" value="0"> CSS</label>
+    <label><input type="radio" name="q23" value="1"> Console</label>
+    <label><input type="radio" name="q23" value="0"> HTML</label>
+</div>
+
+<div class="question">
+    <p>24. خطأ في كتابة الكود يسمى؟</p>
+    <label><input type="radio" name="q24" value="0"> Runtime Error</label>
+    <label><input type="radio" name="q24" value="1"> Syntax Error</label>
+    <label><input type="radio" name="q24" value="0"> Logic Error</label>
+    <label><input type="radio" name="q24" value="0"> Network Error</label>
+</div>
+
+<div class="question">
+    <p>25. أي كود يحتوي خطأ؟</p>
+    <label><input type="radio" name="q25" value="0"> console.log("Hi")</label>
+    <label><input type="radio" name="q25" value="1"> console.log(Hi)</label>
+    <label><input type="radio" name="q25" value="0"> let x = 5</label>
+    <label><input type="radio" name="q25" value="0"> var y = 10</label>
+</div>
+
+<div class="question">
+    <p>26. ما فائدة Console؟</p>
+    <label><input type="radio" name="q26" value="0"> التصميم</label>
+    <label><input type="radio" name="q26" value="1"> اكتشاف الأخطاء</label>
+    <label><input type="radio" name="q26" value="0"> كتابة HTML</label>
+    <label><input type="radio" name="q26" value="0"> تشغيل CSS</label>
+</div>
+
+<div class="question">
+    <p>27. خطأ يحدث أثناء التنفيذ يسمى؟</p>
+    <label><input type="radio" name="q27" value="0"> Syntax</label>
+    <label><input type="radio" name="q27" value="1"> Runtime</label>
+    <label><input type="radio" name="q27" value="0"> Logic</label>
+    <label><input type="radio" name="q27" value="0"> Compile</label>
+</div>
+
+<div class="question">
+    <p>28. أي أداة تساعد في Debug؟</p>
+    <label><input type="radio" name="q28" value="0"> CSS</label>
+    <label><input type="radio" name="q28" value="1"> Console</label>
+    <label><input type="radio" name="q28" value="0"> HTML</label>
+    <label><input type="radio" name="q28" value="0"> Image</label>
+</div>
+
+<div class="question">
+    <p>29. أي نوع بيانات هذا "Hello"؟</p>
+    <label><input type="radio" name="q29" value="0"> Number</label>
+    <label><input type="radio" name="q29" value="0"> Boolean</label>
+    <label><input type="radio" name="q29" value="1"> String</label>
+    <label><input type="radio" name="q29" value="0"> Object</label>
+</div>
+
+<div class="question">
+    <p>30. نوع 10 هو؟</p>
+    <label><input type="radio" name="q30" value="0"> String</label>
+    <label><input type="radio" name="q30" value="0"> Boolean</label>
+    <label><input type="radio" name="q30" value="1"> Number</label>
+    <label><input type="radio" name="q30" value="0"> Undefined</label>
+</div>
+
+<div class="question">
+    <p>31. نوع true هو؟</p>
+    <label><input type="radio" name="q31" value="0"> String</label>
+    <label><input type="radio" name="q31" value="1"> Boolean</label>
+    <label><input type="radio" name="q31" value="0"> Number</label>
+    <label><input type="radio" name="q31" value="0"> Object</label>
+</div>
+
+<div class="question">
+    <p>32. نوع undefined يعني؟</p>
+    <label><input type="radio" name="q32" value="0"> صفر</label>
+    <label><input type="radio" name="q32" value="0"> قيمة خاطئة</label>
+    <label><input type="radio" name="q32" value="1"> غير معرف</label>
+    <label><input type="radio" name="q32" value="0"> نص فارغ</label>
+</div>
+
+<div class="question">
+    <p>33. نوع البيانات الافتراضي للنص؟</p>
+    <label><input type="radio" name="q33" value="1"> String</label>
+    <label><input type="radio" name="q33" value="0"> Text</label>
+    <label><input type="radio" name="q33" value="0"> Char</label>
+    <label><input type="radio" name="q33" value="0"> Word</label>
+</div>
+
+<div class="question">
+    <p>34. نوع {} هو؟</p>
+    <label><input type="radio" name="q34" value="0"> Array</label>
+    <label><input type="radio" name="q34" value="1"> Object</label>
+    <label><input type="radio" name="q34" value="0"> String</label>
+    <label><input type="radio" name="q34" value="0"> Number</label>
+</div>
+
+<div class="question">
+    <p>35. نوع [] هو؟</p>
+    <label><input type="radio" name="q35" value="0"> Object</label>
+    <label><input type="radio" name="q35" value="1"> Array</label>
+    <label><input type="radio" name="q35" value="0"> String</label>
+    <label><input type="radio" name="q35" value="0"> Boolean</label>
+</div>
+
+<div class="question">
+    <p>36. null تعني؟</p>
+    <label><input type="radio" name="q36" value="1"> غير موجود</label>
+    <label><input type="radio" name="q36" value="0"> صفر</label>
+    <label><input type="radio" name="q36" value="0"> نص</label>
+    <label><input type="radio" name="q36" value="0"> خطأ</label>
+</div>
+
+<div class="question">
+    <p>37. أي دالة لمعرفة نوع البيانات؟</p>
+    <label><input type="radio" name="q37" value="0"> type()</label>
+    <label><input type="radio" name="q37" value="1"> typeof</label>
+    <label><input type="radio" name="q37" value="0"> check()</label>
+    <label><input type="radio" name="q37" value="0"> kind()</label>
+</div>
+
+<div class="question">
+    <p>38. ناتج typeof 5 هو؟</p>
+    <label><input type="radio" name="q38" value="1"> number</label>
+    <label><input type="radio" name="q38" value="0"> string</label>
+    <label><input type="radio" name="q38" value="0"> boolean</label>
+    <label><input type="radio" name="q38" value="0"> object</label>
+</div>
+
+<div class="question">
+    <p>39. أي كلمة لتعريف متغير؟</p>
+    <label><input type="radio" name="q39" value="0"> var</label>
+    <label><input type="radio" name="q39" value="0"> let</label>
+    <label><input type="radio" name="q39" value="0"> const</label>
+    <label><input type="radio" name="q39" value="1"> كل ما سبق</label>
+</div>
+
+<div class="question">
+    <p>40. أي متغير يمكن تغيير قيمته؟</p>
+    <label><input type="radio" name="q40" value="0"> const</label>
+    <label><input type="radio" name="q40" value="1"> let</label>
+    <label><input type="radio" name="q40" value="0"> string</label>
+    <label><input type="radio" name="q40" value="0"> number</label>
+</div>
+
+<div class="question">
+    <p>41. أي متغير ثابت؟</p>
+    <label><input type="radio" name="q41" value="0"> var</label>
+    <label><input type="radio" name="q41" value="0"> let</label>
+    <label><input type="radio" name="q41" value="1"> const</label>
+    <label><input type="radio" name="q41" value="0"> data</label>
+</div>
+
+<div class="question">
+    <p>42. أي كود صحيح؟</p>
+    <label><input type="radio" name="q42" value="0"> let 1x = 5</label>
+    <label><input type="radio" name="q42" value="1"> let x = 5</label>
+    <label><input type="radio" name="q42" value="0"> let = x 5</label>
+    <label><input type="radio" name="q42" value="0"> x let = 5</label>
+</div>
+
+<div class="question">
+    <p>43. Concatenation تعني؟</p>
+    <label><input type="radio" name="q43" value="0"> طرح</label>
+    <label><input type="radio" name="q43" value="0"> ضرب</label>
+    <label><input type="radio" name="q43" value="1"> جمع نصوص</label>
+    <label><input type="radio" name="q43" value="0"> قسمة</label>
+</div>
+
+<div class="question">
+    <p>44. أي كود يعمل Concatenation؟</p>
+    <label><input type="radio" name="q44" value="1"> "Hello" + "World"</label>
+    <label><input type="radio" name="q44" value="0"> "Hello" - "World"</label>
+    <label><input type="radio" name="q44" value="0"> "Hello" * "World"</label>
+    <label><input type="radio" name="q44" value="0"> "Hello" / "World"</label>
+</div>
+
+<div class="question">
+    <p>45. ناتج "5" + 5؟</p>
+    <label><input type="radio" name="q45" value="0"> 10</label>
+    <label><input type="radio" name="q45" value="1"> 55</label>
+    <label><input type="radio" name="q45" value="0"> Error</label>
+    <label><input type="radio" name="q45" value="0"> undefined</label>
+</div>
+
+<div class="question">
+    <p>46. ناتج 5 + "5"؟</p>
+    <label><input type="radio" name="q46" value="0"> 10</label>
+    <label><input type="radio" name="q46" value="1"> 55</label>
+    <label><input type="radio" name="q46" value="0"> Error</label>
+    <label><input type="radio" name="q46" value="0"> null</label>
+</div>
+
+<div class="question">
+    <p>47. Concatenation يستخدم مع؟</p>
+    <label><input type="radio" name="q47" value="0"> Numbers فقط</label>
+    <label><input type="radio" name="q47" value="0"> Strings فقط</label>
+    <label><input type="radio" name="q47" value="1"> Strings و Numbers</label>
+    <label><input type="radio" name="q47" value="0"> Boolean</label>
+</div>
+
+<div class="question">
+    <p>48. أي رمز يستخدم للـ concatenation؟</p>
+    <label><input type="radio" name="q48" value="0"> *</label>
+    <label><input type="radio" name="q48" value="0"> -</label>
+    <label><input type="radio" name="q48" value="1"> +</label>
+    <label><input type="radio" name="q48" value="0"> /</label>
+</div>
+
+<div class="question">
+    <p>49. let name = "Ali"; نوع المتغير؟</p>
+    <label><input type="radio" name="q49" value="0"> Number</label>
+    <label><input type="radio" name="q49" value="1"> String</label>
+    <label><input type="radio" name="q49" value="0"> Boolean</label>
+    <label><input type="radio" name="q49" value="0"> Object</label>
+</div>
+
+<div class="question">
+    <p>50. أي كود صحيح؟</p>
+    <label><input type="radio" name="q50" value="0"> const x;</label>
+    <label><input type="radio" name="q50" value="1"> const x = 10;</label>
+    <label><input type="radio" name="q50" value="0"> let const = 5;</label>
+    <label><input type="radio" name="q50" value="0"> var = x 3;</label>
+</div>
+
+<button type="button" onclick="submitQuiz()">عرض النتيجة</button>
+</form>
+
+<script>
+function submitQuiz() {
+    const totalQuestions = 50;
+    let score = 0;
+
+    // إزالة تلوين الأخطاء السابق
+    const allQuestions = document.querySelectorAll('.question');
+    allQuestions.forEach(q => q.classList.remove('wrong'));
+
+    for (let i = 1; i <= totalQuestions; i++) {
+        const q = document.querySelector(`input[name="q${i}"]:checked`);
+        if (q) {
+            score += parseInt(q.value);
+            if (parseInt(q.value) === 0) {
+                // إجابة خاطئة
+                q.closest('.question').classList.add('wrong');
+            }
+        } else {
+            // إذا لم يختار المستخدم أي خيار، يعتبر خاطئ
+            document.querySelector(`input[name="q${i}"]`).closest('.question').classList.add('wrong');
+        }
+    }
+
+    alert(`نتيجتك: ${score} / ${totalQuestions}`);
+}
+</script>
+
+</body>
+</html>
