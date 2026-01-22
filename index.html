@@ -17,19 +17,7 @@
     />
   </head>
   <body>
-    <nav>
-      <!-- الشعار -->
-      <a href="#" class="logo">المبرمجين الروشين</a>
-      <!-- قائمة الروابط -->
-      <ul>
-        <li><a href="./index.html">الرئيسية</a></li>
-
-        <li><a href="/test.html">اختبارات برمجية</a></li>
-        <li><a href="#">ماتريال مجاني</a></li>
-        <li><a href="#">كورسات</a></li>
-        <li><a href="#">مشاريع تطبيق عملي</a></li>
-      </ul>
-    </nav>
+    <div id="navbar"></div>
 
     <div class="groups">
       <h2>جروبات الواتس اب</h2>
@@ -80,5 +68,13 @@
         >
       </div>
     </div>
+
+    <script>
+      fetch("nav.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
