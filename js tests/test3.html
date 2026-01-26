@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>اختبار JavaScript - Number & String Methods</title>
-<link rel="stylesheet" href="../css/tests.css">
-<link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اختبار JavaScript - Exam 3</title>
+    <link rel="stylesheet" href="../css/tests.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
     <nav>
       <a
         href="https://adelmhmd77.github.io/cool-programmers-website/"
@@ -27,396 +27,439 @@
             >اختبارات برمجية</a
           >
         </li>
-        <li><a href="https://adelmhmd77.github.io/cool-programmers-website/material.html">ماتريال مجاني</a></li>
-        <li><a href="https://adelmhmd77.github.io/cool-programmers-website/courses.html">كورسات</a></li>
-        <li><a href="https://adelmhmd77.github.io/cool-programmers-website/projects.html">مشاريع تطبيق عملي</a></li>
+        <li>
+          <a
+            href="https://adelmhmd77.github.io/cool-programmers-website/material.html"
+            >ماتريال مجاني</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adelmhmd77.github.io/cool-programmers-website/courses.html"
+            >كورسات</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://adelmhmd77.github.io/cool-programmers-website/projects.html"
+            >مشاريع تطبيق عملي</a
+          >
+        </li>
       </ul>
     </nav>
-<header>
-    <h1>اختبار JavaScript - Number & String Methods</h1>
-</header>
+    <header>
+      <h1>اختبار JavaScript - Exam 3</h1>
+    </header>
 
-<form id="quizForm">
+    <form id="quizForm">
+      <div class="question">
+        <p>1. ما ناتج: Number.isInteger(10)</p>
+        <label><input type="radio" name="q1" value="0" /> "true"</label>
+        <label><input type="radio" name="q1" value="1" /> true</label>
+        <label><input type="radio" name="q1" value="0" /> false</label>
+      </div>
 
-<div class="question">
-    <p>1. ما ناتج: Number.isInteger(10)</p>
-    <label><input type="radio" name="q1" value="0"> "true"</label>
-    <label><input type="radio" name="q1" value="1"> true</label>
-    <label><input type="radio" name="q1" value="0"> false</label>
-</div>
+      <div class="question">
+        <p>2. ما ناتج: Number.isInteger(10.5)</p>
+        <label><input type="radio" name="q2" value="0" /> true</label>
+        <label><input type="radio" name="q2" value="1" /> false</label>
+        <label><input type="radio" name="q2" value="0" /> "false"</label>
+      </div>
 
-<div class="question">
-    <p>2. ما ناتج: Number.isInteger(10.5)</p>
-    <label><input type="radio" name="q2" value="0"> true</label>
-    <label><input type="radio" name="q2" value="1"> false</label>
-    <label><input type="radio" name="q2" value="0"> "false"</label>
-</div>
+      <div class="question">
+        <p>3. ما وظيفة Number.isSafeInteger()؟</p>
+        <label
+          ><input type="radio" name="q3" value="0" /> التحقق أن الرقم
+          موجب</label
+        >
+        <label
+          ><input type="radio" name="q3" value="1" /> التحقق أن الرقم صحيح
+          وآمن</label
+        >
+        <label
+          ><input type="radio" name="q3" value="0" /> تحويل الرقم إلى
+          Integer</label
+        >
+      </div>
 
-<div class="question">
-    <p>3. ما وظيفة Number.isSafeInteger()؟</p>
-    <label><input type="radio" name="q3" value="0"> التحقق أن الرقم موجب</label>
-    <label><input type="radio" name="q3" value="1"> التحقق أن الرقم صحيح وآمن</label>
-    <label><input type="radio" name="q3" value="0"> تحويل الرقم إلى Integer</label>
-</div>
+      <div class="question">
+        <p>4. ما ناتج: Number.isNaN(NaN)</p>
+        <label><input type="radio" name="q4" value="1" /> true</label>
+        <label><input type="radio" name="q4" value="0" /> false</label>
+        <label><input type="radio" name="q4" value="0" /> Error</label>
+      </div>
 
-<div class="question">
-    <p>4. ما ناتج: Number.isNaN(NaN)</p>
-    <label><input type="radio" name="q4" value="1"> true</label>
-    <label><input type="radio" name="q4" value="0"> false</label>
-    <label><input type="radio" name="q4" value="0"> Error</label>
-</div>
+      <div class="question">
+        <p>5. ما ناتج: Number.parseInt("100.55")</p>
+        <label><input type="radio" name="q5" value="0" /> 100.55</label>
+        <label><input type="radio" name="q5" value="1" /> 100</label>
+        <label><input type="radio" name="q5" value="0" /> "100"</label>
+      </div>
 
-<div class="question">
-    <p>5. ما ناتج: Number.parseInt("100.55")</p>
-    <label><input type="radio" name="q5" value="0"> 100.55</label>
-    <label><input type="radio" name="q5" value="1"> 100</label>
-    <label><input type="radio" name="q5" value="0"> "100"</label>
-</div>
+      <div class="question">
+        <p>6. ما ناتج: Number.parseFloat("100.55")</p>
+        <label><input type="radio" name="q6" value="0" /> 100</label>
+        <label><input type="radio" name="q6" value="0" /> "100.55"</label>
+        <label><input type="radio" name="q6" value="1" /> 100.55</label>
+      </div>
 
-<div class="question">
-    <p>6. ما ناتج: Number.parseFloat("100.55")</p>
-    <label><input type="radio" name="q6" value="0"> 100</label>
-    <label><input type="radio" name="q6" value="0"> "100.55"</label>
-    <label><input type="radio" name="q6" value="1"> 100.55</label>
-</div>
+      <div class="question">
+        <p>7. Number.MAX_VALUE يمثل:</p>
+        <label
+          ><input type="radio" name="q7" value="0" /> أصغر رقم في
+          JavaScript</label
+        >
+        <label><input type="radio" name="q7" value="1" /> أكبر رقم ممكن</label>
+        <label
+          ><input type="radio" name="q7" value="0" /> أكبر رقم صحيح فقط</label
+        >
+      </div>
 
-<div class="question">
-    <p>7. Number.MAX_VALUE يمثل:</p>
-    <label><input type="radio" name="q7" value="0"> أصغر رقم في JavaScript</label>
-    <label><input type="radio" name="q7" value="1"> أكبر رقم ممكن</label>
-    <label><input type="radio" name="q7" value="0"> أكبر رقم صحيح فقط</label>
-</div>
+      <div class="question">
+        <p>8. Number.MIN_SAFE_INTEGER يساوي:</p>
+        <label><input type="radio" name="q8" value="1" /> أصغر رقم آمن</label>
+        <label><input type="radio" name="q8" value="0" /> صفر</label>
+        <label><input type="radio" name="q8" value="0" /> أكبر رقم سالب</label>
+      </div>
 
-<div class="question">
-    <p>8. Number.MIN_SAFE_INTEGER يساوي:</p>
-    <label><input type="radio" name="q8" value="1"> أصغر رقم آمن</label>
-    <label><input type="radio" name="q8" value="0"> صفر</label>
-    <label><input type="radio" name="q8" value="0"> أكبر رقم سالب</label>
-</div>
+      <div class="question">
+        <p>9. ما قيمة: Math.PI</p>
+        <label><input type="radio" name="q9" value="0" /> 3</label>
+        <label><input type="radio" name="q9" value="0" /> 3.14</label>
+        <label
+          ><input type="radio" name="q9" value="1" /> 3.141592653589793</label
+        >
+      </div>
 
-<div class="question">
-    <p>9. ما قيمة: Math.PI</p>
-    <label><input type="radio" name="q9" value="0"> 3</label>
-    <label><input type="radio" name="q9" value="0"> 3.14</label>
-    <label><input type="radio" name="q9" value="1"> 3.141592653589793</label>
-</div>
+      <div class="question">
+        <p>10. ما وظيفة: Math.abs(-5)</p>
+        <label><input type="radio" name="q10" value="0" /> -5</label>
+        <label><input type="radio" name="q10" value="1" /> 5</label>
+        <label><input type="radio" name="q10" value="0" /> Error</label>
+      </div>
 
-<div class="question">
-    <p>10. ما وظيفة: Math.abs(-5)</p>
-    <label><input type="radio" name="q10" value="0"> -5</label>
-    <label><input type="radio" name="q10" value="1"> 5</label>
-    <label><input type="radio" name="q10" value="0"> Error</label>
-</div>
+      <div class="question">
+        <p>11. ما ناتج: Math.round(4.6)</p>
+        <label><input type="radio" name="q11" value="0" /> 4</label>
+        <label><input type="radio" name="q11" value="1" /> 5</label>
+        <label><input type="radio" name="q11" value="0" /> 4.6</label>
+      </div>
 
-<div class="question">
-    <p>11. ما ناتج: Math.round(4.6)</p>
-    <label><input type="radio" name="q11" value="0"> 4</label>
-    <label><input type="radio" name="q11" value="1"> 5</label>
-    <label><input type="radio" name="q11" value="0"> 4.6</label>
-</div>
+      <div class="question">
+        <p>12. ما ناتج: Math.ceil(4.1)</p>
+        <label><input type="radio" name="q12" value="0" /> 4</label>
+        <label><input type="radio" name="q12" value="1" /> 5</label>
+        <label><input type="radio" name="q12" value="0" /> 4.1</label>
+      </div>
 
-<div class="question">
-    <p>12. ما ناتج: Math.ceil(4.1)</p>
-    <label><input type="radio" name="q12" value="0"> 4</label>
-    <label><input type="radio" name="q12" value="1"> 5</label>
-    <label><input type="radio" name="q12" value="0"> 4.1</label>
-</div>
+      <div class="question">
+        <p>13. ما ناتج: Math.floor(4.9)</p>
+        <label><input type="radio" name="q13" value="1" /> 4</label>
+        <label><input type="radio" name="q13" value="0" /> 5</label>
+        <label><input type="radio" name="q13" value="0" /> 4.9</label>
+      </div>
 
-<div class="question">
-    <p>13. ما ناتج: Math.floor(4.9)</p>
-    <label><input type="radio" name="q13" value="1"> 4</label>
-    <label><input type="radio" name="q13" value="0"> 5</label>
-    <label><input type="radio" name="q13" value="0"> 4.9</label>
-</div>
+      <div class="question">
+        <p>14. ما ناتج: Math.max(2, 8, 5)</p>
+        <label><input type="radio" name="q14" value="0" /> 2</label>
+        <label><input type="radio" name="q14" value="0" /> 5</label>
+        <label><input type="radio" name="q14" value="1" /> 8</label>
+      </div>
 
-<div class="question">
-    <p>14. ما ناتج: Math.max(2, 8, 5)</p>
-    <label><input type="radio" name="q14" value="0"> 2</label>
-    <label><input type="radio" name="q14" value="0"> 5</label>
-    <label><input type="radio" name="q14" value="1"> 8</label>
-</div>
+      <div class="question">
+        <p>15. ما ناتج: Math.min(2, 8, 5)</p>
+        <label><input type="radio" name="q15" value="1" /> 2</label>
+        <label><input type="radio" name="q15" value="0" /> 5</label>
+        <label><input type="radio" name="q15" value="0" /> 8</label>
+      </div>
 
-<div class="question">
-    <p>15. ما ناتج: Math.min(2, 8, 5)</p>
-    <label><input type="radio" name="q15" value="1"> 2</label>
-    <label><input type="radio" name="q15" value="0"> 5</label>
-    <label><input type="radio" name="q15" value="0"> 8</label>
-</div>
+      <div class="question">
+        <p>16. ما ناتج: Math.pow(2, 3)</p>
+        <label><input type="radio" name="q16" value="0" /> 6</label>
+        <label><input type="radio" name="q16" value="1" /> 8</label>
+        <label><input type="radio" name="q16" value="0" /> 9</label>
+      </div>
 
-<div class="question">
-    <p>16. ما ناتج: Math.pow(2, 3)</p>
-    <label><input type="radio" name="q16" value="0"> 6</label>
-    <label><input type="radio" name="q16" value="1"> 8</label>
-    <label><input type="radio" name="q16" value="0"> 9</label>
-</div>
+      <div class="question">
+        <p>17. ما ناتج: Math.sqrt(16)</p>
+        <label><input type="radio" name="q17" value="0" /> 8</label>
+        <label><input type="radio" name="q17" value="1" /> 4</label>
+        <label><input type="radio" name="q17" value="0" /> 2</label>
+      </div>
 
-<div class="question">
-    <p>17. ما ناتج: Math.sqrt(16)</p>
-    <label><input type="radio" name="q17" value="0"> 8</label>
-    <label><input type="radio" name="q17" value="1"> 4</label>
-    <label><input type="radio" name="q17" value="0"> 2</label>
-</div>
+      <div class="question">
+        <p>18. ما نوع: typeof String(100)</p>
+        <label><input type="radio" name="q18" value="0" /> number</label>
+        <label><input type="radio" name="q18" value="1" /> string</label>
+        <label><input type="radio" name="q18" value="0" /> object</label>
+      </div>
 
-<div class="question">
-    <p>18. ما نوع: typeof String(100)</p>
-    <label><input type="radio" name="q18" value="0"> number</label>
-    <label><input type="radio" name="q18" value="1"> string</label>
-    <label><input type="radio" name="q18" value="0"> object</label>
-</div>
+      <div class="question">
+        <p>19. ما نوع: typeof 100..toString()</p>
+        <label><input type="radio" name="q19" value="0" /> number</label>
+        <label><input type="radio" name="q19" value="1" /> string</label>
+        <label><input type="radio" name="q19" value="0" /> boolean</label>
+      </div>
 
-<div class="question">
-    <p>19. ما نوع: typeof 100..toString()</p>
-    <label><input type="radio" name="q19" value="0"> number</label>
-    <label><input type="radio" name="q19" value="1"> string</label>
-    <label><input type="radio" name="q19" value="0"> boolean</label>
-</div>
+      <div class="question">
+        <p>20. ما ناتج: "Ali".length</p>
+        <label><input type="radio" name="q20" value="0" /> 2</label>
+        <label><input type="radio" name="q20" value="1" /> 3</label>
+        <label><input type="radio" name="q20" value="0" /> 4</label>
+      </div>
 
-<div class="question">
-    <p>20. ما ناتج: "Ali".length</p>
-    <label><input type="radio" name="q20" value="0"> 2</label>
-    <label><input type="radio" name="q20" value="1"> 3</label>
-    <label><input type="radio" name="q20" value="0"> 4</label>
-</div>
+      <div class="question">
+        <p>21. ما ناتج: "Ali".charAt(1)</p>
+        <label><input type="radio" name="q21" value="0" /> A</label>
+        <label><input type="radio" name="q21" value="1" /> l</label>
+        <label><input type="radio" name="q21" value="0" /> i</label>
+      </div>
 
-<div class="question">
-    <p>21. ما ناتج: "Ali".charAt(1)</p>
-    <label><input type="radio" name="q21" value="0"> A</label>
-    <label><input type="radio" name="q21" value="1"> l</label>
-    <label><input type="radio" name="q21" value="0"> i</label>
-</div>
+      <div class="question">
+        <p>22. ما ناتج: "Ali".indexOf("i")</p>
+        <label><input type="radio" name="q22" value="0" /> 0</label>
+        <label><input type="radio" name="q22" value="0" /> 1</label>
+        <label><input type="radio" name="q22" value="1" /> 2</label>
+      </div>
 
-<div class="question">
-    <p>22. ما ناتج: "Ali".indexOf("i")</p>
-    <label><input type="radio" name="q22" value="0"> 0</label>
-    <label><input type="radio" name="q22" value="0"> 1</label>
-    <label><input type="radio" name="q22" value="1"> 2</label>
-</div>
+      <div class="question">
+        <p>23. ما ناتج: "Ali".includes("x")</p>
+        <label><input type="radio" name="q23" value="0" /> true</label>
+        <label><input type="radio" name="q23" value="1" /> false</label>
+        <label><input type="radio" name="q23" value="0" /> Error</label>
+      </div>
 
-<div class="question">
-    <p>23. ما ناتج: "Ali".includes("x")</p>
-    <label><input type="radio" name="q23" value="0"> true</label>
-    <label><input type="radio" name="q23" value="1"> false</label>
-    <label><input type="radio" name="q23" value="0"> Error</label>
-</div>
+      <div class="question">
+        <p>24. ما ناتج: "Ali".startsWith("A")</p>
+        <label><input type="radio" name="q24" value="1" /> true</label>
+        <label><input type="radio" name="q24" value="0" /> false</label>
+        <label><input type="radio" name="q24" value="0" /> Error</label>
+      </div>
 
-<div class="question">
-    <p>24. ما ناتج: "Ali".startsWith("A")</p>
-    <label><input type="radio" name="q24" value="1"> true</label>
-    <label><input type="radio" name="q24" value="0"> false</label>
-    <label><input type="radio" name="q24" value="0"> Error</label>
-</div>
+      <div class="question">
+        <p>25. ما ناتج: "Ali".endsWith("i")</p>
+        <label><input type="radio" name="q25" value="1" /> true</label>
+        <label><input type="radio" name="q25" value="0" /> false</label>
+        <label><input type="radio" name="q25" value="0" /> Error</label>
+      </div>
 
-<div class="question">
-    <p>25. ما ناتج: "Ali".endsWith("i")</p>
-    <label><input type="radio" name="q25" value="1"> true</label>
-    <label><input type="radio" name="q25" value="0"> false</label>
-    <label><input type="radio" name="q25" value="0"> Error</label>
-</div>
+      <div class="question">
+        <p>26. ما ناتج: "Ali".repeat(2)</p>
+        <label><input type="radio" name="q26" value="1" /> "AliAli"</label>
+        <label><input type="radio" name="q26" value="0" /> "Ali 2"</label>
+        <label><input type="radio" name="q26" value="0" /> Error</label>
+      </div>
 
-<div class="question">
-    <p>26. ما ناتج: "Ali".repeat(2)</p>
-    <label><input type="radio" name="q26" value="1"> "AliAli"</label>
-    <label><input type="radio" name="q26" value="0"> "Ali 2"</label>
-    <label><input type="radio" name="q26" value="0"> Error</label>
-</div>
+      <div class="question">
+        <p>27. ما ناتج: "JavaScript".slice(0,4)</p>
+        <label><input type="radio" name="q27" value="1" /> "Java"</label>
+        <label><input type="radio" name="q27" value="0" /> "Script"</label>
+        <label><input type="radio" name="q27" value="0" /> "JavaS"</label>
+      </div>
 
-<div class="question">
-    <p>27. ما ناتج: "JavaScript".slice(0,4)</p>
-    <label><input type="radio" name="q27" value="1"> "Java"</label>
-    <label><input type="radio" name="q27" value="0"> "Script"</label>
-    <label><input type="radio" name="q27" value="0"> "JavaS"</label>
-</div>
+      <div class="question">
+        <p>28. ما ناتج: "JavaScript".substring(4,10)</p>
+        <label><input type="radio" name="q28" value="1" /> "Script"</label>
+        <label><input type="radio" name="q28" value="0" /> "Java"</label>
+        <label><input type="radio" name="q28" value="0" /> "JavaScript"</label>
+      </div>
 
-<div class="question">
-    <p>28. ما ناتج: "JavaScript".substring(4,10)</p>
-    <label><input type="radio" name="q28" value="1"> "Script"</label>
-    <label><input type="radio" name="q28" value="0"> "Java"</label>
-    <label><input type="radio" name="q28" value="0"> "JavaScript"</label>
-</div>
+      <div class="question">
+        <p>29. الفرق الأساسي بين slice و substring؟</p>
+        <label><input type="radio" name="q29" value="0" /> لا يوجد فرق</label>
+        <label
+          ><input type="radio" name="q29" value="1" /> slice تقبل أرقام
+          سالبة</label
+        >
+        <label
+          ><input type="radio" name="q29" value="0" /> substring تقبل أرقام
+          سالبة</label
+        >
+      </div>
 
-<div class="question">
-    <p>29. الفرق الأساسي بين slice و substring؟</p>
-    <label><input type="radio" name="q29" value="0"> لا يوجد فرق</label>
-    <label><input type="radio" name="q29" value="1"> slice تقبل أرقام سالبة</label>
-    <label><input type="radio" name="q29" value="0"> substring تقبل أرقام سالبة</label>
-</div>
+      <div class="question">
+        <p>30. ما ناتج: "Hello".split("")</p>
+        <label><input type="radio" name="q30" value="0" /> "Hello"</label>
+        <label
+          ><input type="radio" name="q30" value="1" /> Array of letters</label
+        >
+        <label><input type="radio" name="q30" value="0" /> Error</label>
+      </div>
 
-<div class="question">
-    <p>30. ما ناتج: "Hello".split("")</p>
-    <label><input type="radio" name="q30" value="0"> "Hello"</label>
-    <label><input type="radio" name="q30" value="1"> Array of letters</label>
-    <label><input type="radio" name="q30" value="0"> Error</label>
-</div>
+      <div class="question">
+        <p>31. ما نوع القيمة الراجعة من split()؟</p>
+        <label><input type="radio" name="q31" value="0" /> String</label>
+        <label><input type="radio" name="q31" value="1" /> Array</label>
+        <label><input type="radio" name="q31" value="0" /> Object</label>
+      </div>
 
-<div class="question">
-    <p>31. ما نوع القيمة الراجعة من split()؟</p>
-    <label><input type="radio" name="q31" value="0"> String</label>
-    <label><input type="radio" name="q31" value="1"> Array</label>
-    <label><input type="radio" name="q31" value="0"> Object</label>
-</div>
+      <div class="question">
+        <p>32. ما ناتج: typeof Math.PI</p>
+        <label><input type="radio" name="q32" value="1" /> number</label>
+        <label><input type="radio" name="q32" value="0" /> string</label>
+        <label><input type="radio" name="q32" value="0" /> object</label>
+      </div>
 
-<div class="question">
-    <p>32. ما ناتج: typeof Math.PI</p>
-    <label><input type="radio" name="q32" value="1"> number</label>
-    <label><input type="radio" name="q32" value="0"> string</label>
-    <label><input type="radio" name="q32" value="0"> object</label>
-</div>
+      <div class="question">
+        <p>33. أي دالة تستخدم للتقريب لأقرب رقم؟</p>
+        <label><input type="radio" name="q33" value="0" /> floor</label>
+        <label><input type="radio" name="q33" value="0" /> ceil</label>
+        <label><input type="radio" name="q33" value="1" /> round</label>
+      </div>
 
-<div class="question">
-    <p>33. أي دالة تستخدم للتقريب لأقرب رقم؟</p>
-    <label><input type="radio" name="q33" value="0"> floor</label>
-    <label><input type="radio" name="q33" value="0"> ceil</label>
-    <label><input type="radio" name="q33" value="1"> round</label>
-</div>
+      <div class="question">
+        <p>34. أي دالة تعيد أكبر رقم؟</p>
+        <label><input type="radio" name="q34" value="0" /> min</label>
+        <label><input type="radio" name="q34" value="1" /> max</label>
+        <label><input type="radio" name="q34" value="0" /> pow</label>
+      </div>
 
-<div class="question">
-    <p>34. أي دالة تعيد أكبر رقم؟</p>
-    <label><input type="radio" name="q34" value="0"> min</label>
-    <label><input type="radio" name="q34" value="1"> max</label>
-    <label><input type="radio" name="q34" value="0"> pow</label>
-</div>
+      <div class="question">
+        <p>35. أي دالة تستخدم لاستخراج الجذر التربيعي؟</p>
+        <label><input type="radio" name="q35" value="0" /> pow</label>
+        <label><input type="radio" name="q35" value="1" /> sqrt</label>
+        <label><input type="radio" name="q35" value="0" /> abs</label>
+      </div>
 
-<div class="question">
-    <p>35. أي دالة تستخدم لاستخراج الجذر التربيعي؟</p>
-    <label><input type="radio" name="q35" value="0"> pow</label>
-    <label><input type="radio" name="q35" value="1"> sqrt</label>
-    <label><input type="radio" name="q35" value="0"> abs</label>
-</div>
+      <div class="question">
+        <p>36. ما ناتج: Number("100")</p>
+        <label><input type="radio" name="q36" value="0" /> "100"</label>
+        <label><input type="radio" name="q36" value="1" /> 100</label>
+        <label><input type="radio" name="q36" value="0" /> NaN</label>
+      </div>
 
-<div class="question">
-    <p>36. ما ناتج: Number("100")</p>
-    <label><input type="radio" name="q36" value="0"> "100"</label>
-    <label><input type="radio" name="q36" value="1"> 100</label>
-    <label><input type="radio" name="q36" value="0"> NaN</label>
-</div>
+      <div class="question">
+        <p>37. ما ناتج: Number("Ali")</p>
+        <label><input type="radio" name="q37" value="0" /> "Ali"</label>
+        <label><input type="radio" name="q37" value="0" /> 0</label>
+        <label><input type="radio" name="q37" value="1" /> NaN</label>
+      </div>
 
-<div class="question">
-    <p>37. ما ناتج: Number("Ali")</p>
-    <label><input type="radio" name="q37" value="0"> "Ali"</label>
-    <label><input type="radio" name="q37" value="0"> 0</label>
-    <label><input type="radio" name="q37" value="1"> NaN</label>
-</div>
+      <div class="question">
+        <p>38. typeof NaN يساوي:</p>
+        <label><input type="radio" name="q38" value="1" /> number</label>
+        <label><input type="radio" name="q38" value="0" /> NaN</label>
+        <label><input type="radio" name="q38" value="0" /> undefined</label>
+      </div>
 
-<div class="question">
-    <p>38. typeof NaN يساوي:</p>
-    <label><input type="radio" name="q38" value="1"> number</label>
-    <label><input type="radio" name="q38" value="0"> NaN</label>
-    <label><input type="radio" name="q38" value="0"> undefined</label>
-</div>
+      <div class="question">
+        <p>39. ما ناتج: Math.abs(-10)</p>
+        <label><input type="radio" name="q39" value="0" /> -10</label>
+        <label><input type="radio" name="q39" value="1" /> 10</label>
+        <label><input type="radio" name="q39" value="0" /> 0</label>
+      </div>
 
-<div class="question">
-    <p>39. ما ناتج: Math.abs(-10)</p>
-    <label><input type="radio" name="q39" value="0"> -10</label>
-    <label><input type="radio" name="q39" value="1"> 10</label>
-    <label><input type="radio" name="q39" value="0"> 0</label>
-</div>
+      <div class="question">
+        <p>40. ما ناتج: Math.round(5.4)</p>
+        <label><input type="radio" name="q40" value="1" /> 5</label>
+        <label><input type="radio" name="q40" value="0" /> 6</label>
+        <label><input type="radio" name="q40" value="0" /> 5.4</label>
+      </div>
 
-<div class="question">
-    <p>40. ما ناتج: Math.round(5.4)</p>
-    <label><input type="radio" name="q40" value="1"> 5</label>
-    <label><input type="radio" name="q40" value="0"> 6</label>
-    <label><input type="radio" name="q40" value="0"> 5.4</label>
-</div>
+      <div class="question">
+        <p>41. أي دالة تستخدم لتحويل الرقم إلى نص؟</p>
+        <label><input type="radio" name="q41" value="0" /> String()</label>
+        <label><input type="radio" name="q41" value="0" /> toString()</label>
+        <label><input type="radio" name="q41" value="1" /> كلاهما صحيح</label>
+      </div>
 
-<div class="question">
-    <p>41. أي دالة تستخدم لتحويل الرقم إلى نص؟</p>
-    <label><input type="radio" name="q41" value="0"> String()</label>
-    <label><input type="radio" name="q41" value="0"> toString()</label>
-    <label><input type="radio" name="q41" value="1"> كلاهما صحيح</label>
-</div>
+      <div class="question">
+        <p>42. ما ناتج: "Ali".lastIndexOf("i")</p>
+        <label><input type="radio" name="q42" value="0" /> 0</label>
+        <label><input type="radio" name="q42" value="0" /> 1</label>
+        <label><input type="radio" name="q42" value="1" /> 2</label>
+      </div>
 
-<div class="question">
-    <p>42. ما ناتج: "Ali".lastIndexOf("i")</p>
-    <label><input type="radio" name="q42" value="0"> 0</label>
-    <label><input type="radio" name="q42" value="0"> 1</label>
-    <label><input type="radio" name="q42" value="1"> 2</label>
-</div>
+      <div class="question">
+        <p>43. includes() تعيد:</p>
+        <label><input type="radio" name="q43" value="0" /> String</label>
+        <label><input type="radio" name="q43" value="1" /> Boolean</label>
+        <label><input type="radio" name="q43" value="0" /> Number</label>
+      </div>
 
-<div class="question">
-    <p>43. includes() تعيد:</p>
-    <label><input type="radio" name="q43" value="0"> String</label>
-    <label><input type="radio" name="q43" value="1"> Boolean</label>
-    <label><input type="radio" name="q43" value="0"> Number</label>
-</div>
+      <div class="question">
+        <p>44. ما ناتج: Math.min()</p>
+        <label><input type="radio" name="q44" value="0" /> 0</label>
+        <label><input type="radio" name="q44" value="1" /> Infinity</label>
+        <label><input type="radio" name="q44" value="0" /> -Infinity</label>
+      </div>
 
-<div class="question">
-    <p>44. ما ناتج: Math.min()</p>
-    <label><input type="radio" name="q44" value="0"> 0</label>
-    <label><input type="radio" name="q44" value="1"> Infinity</label>
-    <label><input type="radio" name="q44" value="0"> -Infinity</label>
-</div>
+      <div class="question">
+        <p>45. ما ناتج: Math.max()</p>
+        <label><input type="radio" name="q45" value="0" /> 0</label>
+        <label><input type="radio" name="q45" value="0" /> Infinity</label>
+        <label><input type="radio" name="q45" value="1" /> -Infinity</label>
+      </div>
 
-<div class="question">
-    <p>45. ما ناتج: Math.max()</p>
-    <label><input type="radio" name="q45" value="0"> 0</label>
-    <label><input type="radio" name="q45" value="0"> Infinity</label>
-    <label><input type="radio" name="q45" value="1"> -Infinity</label>
-</div>
+      <div class="question">
+        <p>46. ما نوع: typeof "Ali"</p>
+        <label><input type="radio" name="q46" value="1" /> string</label>
+        <label><input type="radio" name="q46" value="0" /> object</label>
+        <label><input type="radio" name="q46" value="0" /> array</label>
+      </div>
 
-<div class="question">
-    <p>46. ما نوع: typeof "Ali"</p>
-    <label><input type="radio" name="q46" value="1"> string</label>
-    <label><input type="radio" name="q46" value="0"> object</label>
-    <label><input type="radio" name="q46" value="0"> array</label>
-</div>
+      <div class="question">
+        <p>47. ما ناتج: "Ali".slice(-1)</p>
+        <label><input type="radio" name="q47" value="0" /> "A"</label>
+        <label><input type="radio" name="q47" value="1" /> "i"</label>
+        <label><input type="radio" name="q47" value="0" /> "li"</label>
+      </div>
 
-<div class="question">
-    <p>47. ما ناتج: "Ali".slice(-1)</p>
-    <label><input type="radio" name="q47" value="0"> "A"</label>
-    <label><input type="radio" name="q47" value="1"> "i"</label>
-    <label><input type="radio" name="q47" value="0"> "li"</label>
-</div>
+      <div class="question">
+        <p>48. ما ناتج: "Ali".substr(1,2)</p>
+        <label><input type="radio" name="q48" value="0" /> "Al"</label>
+        <label><input type="radio" name="q48" value="1" /> "li"</label>
+        <label><input type="radio" name="q48" value="0" /> "i"</label>
+      </div>
 
-<div class="question">
-    <p>48. ما ناتج: "Ali".substr(1,2)</p>
-    <label><input type="radio" name="q48" value="0"> "Al"</label>
-    <label><input type="radio" name="q48" value="1"> "li"</label>
-    <label><input type="radio" name="q48" value="0"> "i"</label>
-</div>
+      <div class="question">
+        <p>49. أي دالة قديمة (Deprecated)؟</p>
+        <label><input type="radio" name="q49" value="0" /> slice</label>
+        <label><input type="radio" name="q49" value="0" /> substring</label>
+        <label><input type="radio" name="q49" value="1" /> substr</label>
+      </div>
 
-<div class="question">
-    <p>49. أي دالة قديمة (Deprecated)؟</p>
-    <label><input type="radio" name="q49" value="0"> slice</label>
-    <label><input type="radio" name="q49" value="0"> substring</label>
-    <label><input type="radio" name="q49" value="1"> substr</label>
-</div>
+      <div class="question">
+        <p>50. أفضل استخدام لـ Number.isNaN()؟</p>
+        <label><input type="radio" name="q50" value="0" /> فحص أي قيمة</label>
+        <label><input type="radio" name="q50" value="1" /> فحص NaN فقط</label>
+        <label
+          ><input type="radio" name="q50" value="0" /> تحويل String إلى
+          Number</label
+        >
+      </div>
 
-<div class="question">
-    <p>50. أفضل استخدام لـ Number.isNaN()؟</p>
-    <label><input type="radio" name="q50" value="0"> فحص أي قيمة</label>
-    <label><input type="radio" name="q50" value="1"> فحص NaN فقط</label>
-    <label><input type="radio" name="q50" value="0"> تحويل String إلى Number</label>
-</div>
+      <button type="button" onclick="submitQuiz()">عرض النتيجة</button>
+    </form>
 
-<button type="button" onclick="submitQuiz()">عرض النتيجة</button>
-</form>
+    <script>
+      function submitQuiz() {
+        const totalQuestions = 50;
+        let score = 0;
 
-<script>
-function submitQuiz() {
-    const totalQuestions = 50;
-    let score = 0;
+        // إزالة تلوين الأخطاء السابق
+        const allQuestions = document.querySelectorAll(".question");
+        allQuestions.forEach((q) => q.classList.remove("wrong"));
 
-    // إزالة تلوين الأخطاء السابق
-    const allQuestions = document.querySelectorAll('.question');
-    allQuestions.forEach(q => q.classList.remove('wrong'));
-
-    for (let i = 1; i <= totalQuestions; i++) {
-        const q = document.querySelector(`input[name="q${i}"]:checked`);
-        if (q) {
+        for (let i = 1; i <= totalQuestions; i++) {
+          const q = document.querySelector(`input[name="q${i}"]:checked`);
+          if (q) {
             score += parseInt(q.value);
             if (parseInt(q.value) === 0) {
-                // إجابة خاطئة
-                q.closest('.question').classList.add('wrong');
+              // إجابة خاطئة
+              q.closest(".question").classList.add("wrong");
             }
-        } else {
+          } else {
             // إذا لم يختار المستخدم أي خيار، يعتبر خاطئ
-            document.querySelector(`input[name="q${i}"]`).closest('.question').classList.add('wrong');
+            document
+              .querySelector(`input[name="q${i}"]`)
+              .closest(".question")
+              .classList.add("wrong");
+          }
         }
-    }
 
-    alert(`نتيجتك: ${score} / ${totalQuestions}`);
-}
-</script>
-
-</body>
+        alert(`نتيجتك: ${score} / ${totalQuestions}`);
+      }
+    </script>
+  </body>
 </html>
